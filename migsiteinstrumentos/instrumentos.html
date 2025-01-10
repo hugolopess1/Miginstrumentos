@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loja de Instrumentos Musicais</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f9f9f9;
+    }
+    .header {
+      background: linear-gradient(to right, #030f3d, #190d9c);
+      color: #f0efef;
+      padding: 1rem 0;
+      text-align: center;
+    }
+    .header h1 {
+      margin: 0;
+    }
+    .product-card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .product-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 20px rgba(237, 233, 233, 0.2);
+    }
+    .carousel-item img {
+      max-height: 300px;
+      object-fit: cover;
+    }
+    footer {
+      background: #5858d0;
+      color: #dcd5d5;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <h1>mig</h1>
+    <p>Encontre o instrumento perfeito para você!</p>
+  </header>
+
+  <div id="productCarousel" class="carousel slide mt-4" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./images/bannerblakey.webp" class="d-block w-100" alt="Guitarra">
+      </div>
+      <div class="carousel-item">
+        <img src="./images/bannerinstrumento.png" class="d-block w-100" alt="Piano">
+      </div>
+      <div class="carousel-item">
+        <img src="./images/banneboquilas.jpg" class="d-block w-100" alt="Bateria">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#productCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#productCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card product-card">
+          <div id="guitarCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./images/boquilha meritage.webp" class="d-block w-100" alt="Guitarra 1">
+              </div>
+              <div class="carousel-item">
+                <img src="./images/boquilhameritage.webp" class="d-block w-100" alt="Guitarra 2">
+              </div>
+              <div class="carousel-item">
+                <img src="./images/boquilhameritage2.webp" class="d-block w-100" alt="Guitarra 3">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#guitarCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#guitarCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Boquilha	Soprano	Meritage Shadow	7	Vermelha	Preta</h5>
+            <p class="card-text">A boquilha Meritage da Barkley é feita com B.R.E.N.T, uma mistura de resina de fibra, pó de ébano e pó de metal. Isso proporciona durabilidade, som rico e resposta precisa.</p>
+            <p class="card-text text-primary fw-bold">R$ 429,90</p>
+            <button class="btn btn-outline-primary w-100" onclick="window.location.href='https://wa.me/+556192062287?text=Gostaria%20de%20comprar%20o%20item%20Boquilha%20Soprano%20Meritage%20Shadow%207%20Vermelha%20Preta%20%R$ 429,9020%20'">compra agora</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card product-card">
+          <div id="pianoCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./images/Boquilha Sax Alto Barkley Pop 7.webp" class="d-block w-100" alt="Piano 1">
+              </div>
+              <div class="carousel-item">
+                <img src="images/BoquilhaSaxAltoarkleyPop2 7.webp" class="d-block w-100" alt="Piano 2">
+              </div>
+              <div class="carousel-item">
+                <img src="./images/Boquilhasaxaltoarkleypop3.webp" class="d-block w-100" alt="Piano 3">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#pianoCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#pianoCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Boquilha Sax Alto Barkley Pop 7 Kustom Dourada Preta Bag</h5>
+            <p class="card-text">Boquilha com câmara pequena, defletor elevado e perfuração grande para forte projeção e som brilhante..</p>
+            <p class="card-text text-primary fw-bold">R$ 399,20</p>
+            <button class="btn btn-outline-primary w-100" onclick="window.location.href='https://wa.me/+556192062287?text=Gostaria%20de%20comprar%20o%20item%20boquilha%20Sax%20alto%20Barkley%20pop%20kustom%20dourada%207%20399,20%20'">compra agora</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card product-card">
+          <div id="drumCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./images/BoquilhaAltoMeritageShadow37AzulPreta.webp" class="d-block w-100" alt="Bateria 1">
+              </div>
+              <div class="carousel-item">
+                <img src="./images/BoquilhaAltoMeritageShadow47Azul reta.webp" class="d-block w-100" alt="Bateria 2">
+              </div>
+              <div class="carousel-item">
+                <img src="./images/Boquilha Alto Meritage Shadow214124.webp" class="d-block w-100" alt="Bateria 3">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#drumCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#drumCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Boquilha Alto Meritage Shadow 7 Azul Preta</h5>
+            <p class="card-text">A BARKLEY MERITAGE contém sabor sonoro VINTAGE com potência, equilibrada em afinação e timbre. Pianíssimo sem projeção de chiados.</p>
+            <p class="card-text text-primary fw-bold">R$ 529,20</p>
+            <button class="btn btn-outline-primary w-100" onclick="window.location.href='https://wa.me/+556192062287?text=Gostaria%20de%20comprar%20o%20item%20Boquilha%20alto%20meritage%20Shadow7%20azul%20preta%20R$ 529,20'">compra agora</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card product-card">
+          <div id="guitarCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./images/fitafit.webp" class="d-block w-100" alt="Guitarra 1">
+              </div>
+              <div class="carousel-item">
+                <img src="./images/fitafit2.webp" class="d-block w-100" alt="Guitarra 2">
+              </div>
+              <div class="carousel-item">
+                <img src="./images/correiafit111.webp" class="d-block w-100" alt="Guitarra 3">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#guitarCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#guitarCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Correia Tipo Rico Fit Preta Sax Soprano Alto Tenor Large</h5>
+            <p class="card-text">Feito de couro macio confortável e borracha elástica composta, em conformidade com o design da curvatura do pescoço humano, que pode reduzir a pressão no pescoço e prevenir dores no pescoço;</p>
+            <p class="card-text text-primary fw-bold">R$ 119,00</p>
+            <button class="btn btn-outline-primary w-100" onclick="window.location.href='https://wa.me/+556192062287?text=Gostaria%20de%20comprar%20o%20item%20correia%20rico%20fit%20sax%20alto%20soprano%20Preta%20R$ 119,00%20%20'">compra agora</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card product-card">
+          <div id="pianoCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./images/abraçadeirasoprano1.webp" class="d-block w-100" alt="Piano 1">
+              </div>
+              <div class="carousel-item">
+                <img src="images/abraçadeirasoprano3.webp" class="d-block w-100" alt="Piano 2">
+              </div>
+              <div class="carousel-item">
+                <img src="./images/abraçadeirasoprano5.webp" class="d-block w-100" alt="Piano 3">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#pianoCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#pianoCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Abraçadeira Soprano</h5>
+            <p class="card-text">As abraçadeiras têm a finalidade de prender ou amarrar equipamentos, tubulações e objetos com firmeza e segurança.</p>
+            <p class="card-text text-primary fw-bold">R$ 139,00</p>
+            <button class="btn btn-outline-primary w-100" onclick="window.location.href='https://wa.me/+556192062287?text=Gostaria%20de%20comprar%20o%20item%20Abraçadeira%20Soprano%20'">compra agora</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card product-card">
+          <div id="drumCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./images/correia-classic.webp" class="d-block w-100" alt="Bateria 1">
+              </div>
+              <div class="carousel-item">
+                <img src="./images/correia-classic1.webp" class="d-block w-100" alt="Bateria 2">
+              </div>
+              <div class="carousel-item">
+                <img src="./images/correia-classic2.webp" class="d-block w-100" alt="Bateria 3">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#drumCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#drumCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Correia ClassicBarkley  Classic</h5>
+            <p class="card-text">boquilha é clássica e confortável, com ajuste rápido e seguro, costura dupla e rebite para maior segurança, regulador em nylon preto e gancho metálico.</p>
+            <p class="card-text text-primary fw-bold">R$ 40,90</p>
+            <button class="btn btn-outline-primary w-100" onclick="window.location.href='https://wa.me/5581999999999?text=Gostaria%20de%20comprar%20o%20item%20Correia%20Classic%20Barkley%20%20R$ 40,90%20%20'">compra agora</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card product-card">
+          <div id="guitarCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./images/correia-soft1.webp" class="d-block w-100" alt="Guitarra 1">
+              </div>
+              <div class="carousel-item">
+                <img src="./images/correia-soft4.webp" class="d-block w-100" alt="Guitarra 2">
+              </div>
+              <div class="carousel-item">
+                <img src="./images/correia-soft2.webp" class="d-block w-100" alt="Guitarra 3">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#guitarCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#guitarCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Correia Soft</h5>
+            <p class="card-text">A correia possui um confortável acolchoado de Neoprene e couro sintético, ajuste rápido e seguro, dupla costura e rebite para maior segurança, além de um gancho de metal.</p>
+            <p class="card-text text-primary fw-bold">R$ 82,50</p>
+            <button class="btn btn-outline-primary w-100" onclick="window.location.href='https://wa.me/+556192062287?text=Gostaria%20de%20comprar%20o%20item%20correia%20Soft%20R$ 40,90%20%20%20%20%20%20%20'">compra agora</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card product-card">
+          <div id="pianoCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./images/Flauta Germânica Harmonics HFP-200G1.webp" class="d-block w-100" alt="Piano 1">
+              </div>
+              <div class="carousel-item">
+                <img src="images/Flauta Germânica Harmonics HFP-200G15.webp" class="d-block w-100" alt="Piano 2">
+              </div>
+              <div class="carousel-item">
+                <img src="./images/Flauta Germânica Harmonics HFP-200G6.webp" class="d-block w-100" alt="Piano 3">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#pianoCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#pianoCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Flauta Germânica Harmonics HFP-200G</h5>
+            <p class="card-text">A Flauta Germânica Harmonics HFP-200G tem digitação germânica, afinação em C, e é feita de resina ABS resistente. Inclui estojo, stick de limpeza e resina lubrificante.</p>
+            <p class="card-text text-primary fw-bold">R$ 22,68</p>
+            <button class="btn btn-outline-primary w-100" onclick="window.location.href='https://wa.me/+556192062287?text=Gostaria%20de%20comprar%20o%20item%20Flautas%20Germanica%20Harmonic%20HFP20%-HFP-200G%20R$ 22,68'">compra agora</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card product-card">
+          <div id="drumCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./images/sehxnuv-08641bb864bfc54fc817105137728111-480-08.webp" class="d-block w-100" alt="Bateria 1">
+              </div>
+              <div class="carousel-item">
+                <img src="./images/FLAUTA DOCE SOPRANO YAMAHA YRS-2324B21.webp" class="d-block w-100" alt="Bateria 2">
+              </div>
+              <div class="carousel-item">
+                <img src="./images/lniusde-e2c86a06493101fe4f17105137783718-1024-10245.webp" class="d-block w-100" alt="Bateria 3">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#drumCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#drumCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Flauta Soprano Yamaha YRS24B</h5>
+            <p class="card-text">Flauta soprano de excelente qualidade para iniciantes e músicos experientes.</p>
+            <p class="card-text text-primary fw-bold">R$ 649,90</p>
+            <button class="btn btn-outline-primary w-100" onclick="window.location.href='https://wa.me/+556192062287?text=Gostaria%20de%20comprar%20o%20item%20Flauta%20Soprano%20Yamaha%20YRS24B%20R$ 22,68%20%20'">compre agora</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card product-card">
+          <div id="guitarCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./images/pop-kustom-tenor (7.webp" class="d-block w-100" alt="Guitarra 1">
+              </div>
+              <div class="carousel-item">
+                <img src="./images/pop-kustom-tenor6.webp" class="d-block w-100" alt="Guitarra 2">
+              </div>
+              <div class="carousel-item">
+                <img src="./images/pop-kustom-tenor.webp" class="d-block w-100" alt="Guitarra 3">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#guitarCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#guitarCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Boquilha Teno Pop Kustom 7 Preta/dourada</h5>
+            <p class="card-text">A boquilha pode ajudar na evolução do músico, principalmente para quem está começando a aprender a tocar.</p>
+            <p class="card-text text-primary fw-bold">R$ 479,00</p>
+            <button class="btn btn-outline-primary w-100" onclick="window.location.href='https://wa.me/5581999999999?text=Gostaria%20de%20comprar%20o%20item%20Boquilha%20teno%20Pop%20Custom%207%20dourada%20Preta%20ao%20R$ 479,00%20'">compra agora</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card product-card">
+          <div id="pianoCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./images/POWER BANK 6500MAH ELG PB65.jpg" class="d-block w-100" alt="Piano 1">
+              </div>
+              <div class="carousel-item">
+                <img src="images/POWERBANK6500MAHELG PB652.jpg" class="d-block w-100" alt="Piano 2">
+              </div>
+              <div class="carousel-item">
+                <img src="./images/POWER BANK 6500MAH ELG PB657.jpg" class="d-block w-100" alt="Piano 3">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#pianoCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#pianoCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">POWER BANK 6500MAH ELG PB65</h5>
+            <p class="card-text">As abraçadeiras têm a finalidade de prender ou amarrar equipamentos, tubulações e objetos com firmeza e segurança.</p>
+            <p class="card-text text-primary fw-bold">R$ 79,71</p>
+            <button class="btn btn-outline-primary w-100" onclick="window.location.href='https://wa.me/+556192062287?text=Gostaria%20de%20comprar%20o%20item%20POWER BANK 6500MAH ELG PB65%20R$ 79,71%20'">compra agora</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card product-card">
+          <div id="drumCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./images/Mouse Pad Gamer SPEED MPG102 Preto FORTREK1.jpg" class="d-block w-100" alt="Bateria 1">
+              </div>
+              <div class="carousel-item">
+                <img src="./images/Mouse Pad Gamer SPEED MPG102 Preto FORTREK6.jpg" class="d-block w-100" alt="Bateria 2">
+              </div>
+              <div class="carousel-item">
+                <img src="./images/Mouse Pad Gamer SPEED MPG102 Preto FORTREK6.jpg" class="d-block w-100" alt="Bateria 3">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#drumCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#drumCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Mouse Pad Gamer SPEED MPG102 Preto FORTREK</h5>
+            <p class="card-text">Microfibra com elastano garante baixo atrito e deslize do mouse, ideal para jogos de FPS. Base antiderrapante evita deslizamentos, tecido acolchoado e bordas costuradas proporcionam conforto e evitam desfiamento.</p>
+            <p class="card-text text-primary fw-bold">R$ 13,52  </p>
+            <button class="btn btn-outline-primary w-100" onclick="window.location.href='https://wa.me/5581999999999?text=Gostaria%20de%20comprar%20o%20item%20Mouse Pad Gamer SPEED MPG102 Preto FORTREK%20R$ 13,52'">compre agora</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card product-card">
+          <div id="guitarCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./images/Pen Drive Twist 32GB USB Leitura 10MBs e Gravação 3MBs Preto Multilaser.jpg" class="d-block w-100" alt="Guitarra 1">
+              </div>
+              <div class="carousel-item">
+                <img src="./images/Pen Drive Twist 32GB USB Leitura 10MBs e Gravação 3MBs Preto Multilaser2.jpg" class="d-block w-100" alt="Guitarra 2">
+              </div>
+              <div class="carousel-item">
+                <img src="./images/D_NQ_NP_2X_937859-MLB51720612403_092022-F6666.webp" class="d-block w-100" alt="Guitarra 3">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#guitarCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#guitarCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Pen Drive Twist 32GB USB Leitura 10MB/s e Gravação 3MB/s Preto Multilaser</h5>
+            <p class="card-text">A boquilha pode ajudar na evolução do músico, principalmente para quem está começando a aprender a tocar.</p>
+            <p class="card-text text-primary fw-bold">R$ 30,98</p>
+            <button class="btn btn-outline-primary w-100" onclick="window.location.href='https://wa.me/5581999999999?text=Gostaria%20de%20comprar%20o%20item%20Pendrive%20Twist%2032g%20usb%20R$ 30,98%20'">compra agora</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card product-card">
+          <div id="pianoCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./images/Fones de ouvido wireless1.webp" class="d-block w-100" alt="Piano 1">
+              </div>
+              <div class="carousel-item">
+                <img src="images/Fones de ouvido wireless4.webp" class="d-block w-100" alt="Piano 2">
+              </div>
+              <div class="carousel-item">
+                <img src="./images/Fones de ouvido wireless6.webp" class="d-block w-100" alt="Piano 3">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#pianoCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#pianoCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Fones de ouvido wireless
+              TAH1108BK/00</h5>
+            <p class="card-text">Faça suas atividades ouvindo os sons que você ama. Esses fones de ouvido auriculares wireless oferecem 15 horas de tempo </p>
+            <p class="card-text text-primary fw-bold">R$ 100,87</p>
+            <button class="btn btn-outline-primary w-100" onclick="window.location.href='https://wa.me/+556192062287?text=Gostaria%20de%20comprar%20o%20item%20Fones de ouvido wireless TAH1108BK/00%20R$ 100,87%20'">compra agora</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card product-card">
+          <div id="drumCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./images/Flauta Doce Barroca Soprano Dó Harmonics Hfp-100b Abs1.webp" class="d-block w-100" alt="Bateria 1">
+              </div>
+              <div class="carousel-item">
+                <img src="./images/A Flauta Barroca Harmonics 2555.webp" class="d-block w-100" alt="Bateria 2">
+              </div>
+              <div class="carousel-item">
+                <img src="./images/Flauta Doce Barroca Soprano Dó Harmonics Hfp-100b Abs7.webp" class="d-block w-100" alt="Bateria 3">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#drumCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#drumCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Flauta Doce Barroca Soprano Dó Harmonics Hfp-100b Abs</h5>
+            <p class="card-text">A Flauta Barroca Harmonics HFP-100B é um modelo que oferece uma experiência autêntica de performance barroca. Com digitação barroca e afinação em C (Dó)</p>
+            <p class="card-text text-primary fw-bold">R$ 22,68</p>
+            <button class="btn btn-outline-primary w-100" onclick="window.location.href='https://wa.me/5581999999999?text=Gostaria%20de%20comprar%20o%20item%20Flauta%20Soprano%20Harmonic do%20Hfp-100b%20ao%20R$ 22,68%20'">compre agora</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card product-card">
+          <div id="guitarCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./images/FLAUTA-YAMAHA-YRS23G_IMG21.webp" class="d-block w-100" alt="Guitarra 1">
+              </div>
+              <div class="carousel-item">
+                <img src="./images/FLAUTA-YAMAHA-YRS23G_IMG2 3.webp" class="d-block w-100" alt="Guitarra 2">
+              </div>
+              <div class="carousel-item">
+                <img src="./images/FLAUTA-YAMAHA-YRS23G_IMG2.webp" class="d-block w-100" alt="Guitarra 3">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#guitarCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#guitarCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Flauta Doce Soprano Yamaha YRS23G Germânica</h5>
+            <p class="card-text">Flauta Doce Soprano Yamaha YRS23G faz parte das séries 20 e 30 de flautas doce da Yamaha projetadas para fornecer um começo perfeito na educação musical de todos</p>
+            <p class="card-text text-primary fw-bold">R$ 44,53</p>
+            <button class="btn btn-outline-primary w-100" onclick="window.location.href='https://wa.me/5581999999999?text=Gostaria%20de%20adicionar%20o%20item%20flauta%20Doce%20soprano%20Yahmaha%20YRS23G%20Germanica%20R$ 44,53%20%20%20'">compra agora</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card product-card">
+          <div id="pianoCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./images/CABO USB 20.jpg" class="d-block w-100" alt="Piano 1">
+              </div>
+              <div class="carousel-item">
+                <img src="images/CABO USB 20.jpg" class="d-block w-100" alt="Piano 2">
+              </div>
+              <div class="carousel-item">
+                <img src="./images/CABO USB 20.jpg" class="d-block w-100" alt="Piano 3">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#pianoCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#pianoCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">CABO USB 2.0 X TIPO C 1M STORM CBUS0023			</h5>
+            <p class="card-text">ste cabo permite facilmente a conexão entre dispositivos que possuem a mesma conexão USB-C. Transfira arquivos de modo rápido, contando com a alta taxa de transferência de dados.</p>
+            <p class="card-text text-primary fw-bold">R$ 8,97</p>
+            <button class="btn btn-outline-primary w-100" onclick="window.location.href='https://wa.me/+556192062287?text=Gostaria%20de%20comprar%20o%20item%20CABO USB 2.0 X TIPO C 1M STORM CBUS0023%20R$ 8,97%20'">compra agora</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card product-card">
+          <div id="drumCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./images/MOUSE PAD FORTREK BAP102 PT.webp" class="d-block w-100" alt="Bateria 1">
+              </div>
+              <div class="carousel-item">
+                <img src="./images/MOUSE PAD FORTREK BAP102 PT.webp" class="d-block w-100" alt="Bateria 2">
+              </div>
+              <div class="carousel-item">
+                <img src="./images/MOUSE PAD FORTREK BAP102 PT.webp" class="d-block w-100" alt="Bateria 3">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#drumCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#drumCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">MOUSE PAD FORTREK BAP102 PT</h5>
+            <p class="card-text">Flauta soprano de excelente qualidade para iniciantes e músicos experientes.</p>
+            <p class="card-text text-primary fw-bold">R$ 7,23</p>
+            <button class="btn btn-outline-primary w-100" onclick="window.location.href='https://wa.me/+556192062287?text=Gostaria%20de%comprar%20o%20item%20Mouse%20Pad%20Fortreck%20BAP102%20R$ 7,23%20'">compre agora</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+
+  <footer>
+    <p>&copy; 2025 Loja de Instrumentos Musicais</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

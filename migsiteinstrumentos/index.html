@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mig Instrumentos</title>
+     <link rel="stylesheet" href="./styles/globals.css">
+   
+</head>
+<body>
+
+    <div class="navbar">
+        <div class="header-inner-content">
+            
+        
+            <nav class="nav-menu">
+                <ul>
+                    <li>Home</li>
+                    <li><a href="instrumentos.html">Produtos</a></li>
+                    <li><a href="#contatos">contatos</a></li>
+                    
+                   
+                </ul>
+            </nav>
+   
+            <div class="nav-icon-container">
+                <img src="images/cart.png" alt="Carrinho de Compras" />
+                <img src="images/menu.png" alt="Menu" class="menu-button" />
+            </div>
+        </div>
+    </div>
+
+    <header>
+        <div class="header-inner-content">
+            <div class="header-bottom-side">
+                <div class="header-bottom-side-left">
+                    <h2>Compre seu instrumento ideal ao seu trabalho</h2>
+                    <p>
+                        Quando as palavras falham, a música fala – ela tem o poder de tocar a alma e transformar o coração."
+                    </p>
+                    <a href="produtos.html">
+                        <button>Ver agora &#8594;</button>
+                      </a>
+                </div>
+                <div class="header-bottom-side-right"></div>
+                <img src="images/logotipo2.jpg" alt="Instrumentos" />
+            </div>
+        </div>
+    </header>
+
+    
+        
+    
+
+    <script>
+     
+        const menuButton = document.querySelector(".menu-button");
+        const navMenu = document.querySelector(".nav-menu");
+
+        
+        menuButton.addEventListener("click", function() {
+            navMenu.classList.toggle("show-menu"); 
+        });
+    </script>
+    
+</body>
+
+<title>Loja de Instrumentos Musicais</title>
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- Font Awesome -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+<!-- Custom CSS -->
+<style>
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+  }
+  .header {
+    background: linear-gradient(to right, #0a30d8, #060617);
+    color: #f0efef;
+    padding: 1rem 0;
+    text-align: center;
+  }
+  .header h1 {
+    margin: 0;
+  }
+  .product-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .product-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 20px rgba(237, 233, 233, 0.2);
+  }
+  .carousel-item img {
+    max-height: 300px;
+    object-fit: cover;
+  }
+  footer {
+    background: #0e0e0e;
+    color: #dcd5d5;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+  }
+</style>
+</head>
+<body>
+<header class="header">
+  <h1>mig</h1>
+  <p>Encontre o instrumento perfeito para você!</p>
+</header>
+
+<div id="productCarousel" class="carousel slide mt-4" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="./images/Captura de tela_10-1-2025_193254_barkley.com.br.jpeg" class="d-block w-100" alt="Guitarra">
+    </div>
+    <div class="carousel-item">
+      <img src="./images/bannerinstrumentosaaaa.webp" class="d-block w-100" alt="Piano">
+    </div>
+    <div class="carousel-item">
+      <img src="./images/bannerblakey.webp" class="d-block w-100" alt="Bateria">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#productCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#productCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<div id=contatos class="contatos">
+  <h1>contatos</h1>
+<P>gmail:migmusical2025@gmail.com</P>
+<p>telefone:+55 61 9206-2287</p>
+</div>
+</body>
+
+
+
+
+
